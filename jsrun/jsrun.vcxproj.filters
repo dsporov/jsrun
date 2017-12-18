@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\generated">
+      <UniqueIdentifier>{49d07561-d39f-4a00-beb0-72cd59f694cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\base">
+      <UniqueIdentifier>{1034ce98-7c6f-490a-806d-3fdbe9fc219b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\LLVM">
+      <UniqueIdentifier>{e3abffb9-c72a-42ea-82fa-cd8907cde3f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ANTLR">
+      <UniqueIdentifier>{669abdd5-9dc6-48f0-a2c6-f9ddaa64c393}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="generated\JavaScriptLexer.cpp">
+      <Filter>Source Files\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="generated\JavaScriptParser.cpp">
+      <Filter>Source Files\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="generated\JavaScriptParserBaseListener.cpp">
+      <Filter>Source Files\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="generated\JavaScriptParserListener.cpp">
+      <Filter>Source Files\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="base\JavaScriptBaseLexer.cpp">
+      <Filter>Header Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="base\JavaScriptBaseParser.cpp">
+      <Filter>Header Files\base</Filter>
+    </ClCompile>
+    <ClCompile Include="jsc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JsParserListenerImpl.cpp">
+      <Filter>Source Files\ANTLR</Filter>
+    </ClCompile>
+    <ClCompile Include="LlvmCodeGenerator.cpp">
+      <Filter>Source Files\LLVM</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="generated\JavaScriptLexer.h">
+      <Filter>Source Files\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="generated\JavaScriptParser.h">
+      <Filter>Source Files\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="generated\JavaScriptParserBaseListener.h">
+      <Filter>Source Files\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="generated\JavaScriptParserListener.h">
+      <Filter>Source Files\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="base\JavaScriptBaseLexer.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\JavaScriptBaseParser.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="JsParserListenerImpl.h">
+      <Filter>Source Files\ANTLR</Filter>
+    </ClInclude>
+    <ClInclude Include="jsc.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JsLlvmListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeGenerator.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LlvmCodeGenerator.h">
+      <Filter>Source Files\LLVM</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="generated\JavaScriptLexer.tokens">
+      <Filter>Source Files\generated</Filter>
+    </None>
+    <None Include="generated\JavaScriptParser.tokens">
+      <Filter>Source Files\generated</Filter>
+    </None>
+  </ItemGroup>
+</Project>
