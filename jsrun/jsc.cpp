@@ -3,6 +3,8 @@
 #include <string>
 #include <queue>
 
+#include "boost/filesystem/convenience.hpp"
+
 #include "antlr4-runtime.h"
 
 #include "base/JavaScriptBaseLexer.h"
@@ -61,7 +63,7 @@ int main(int argc, char *argv[]) {
 	std::cout << tree->toStringTree(&parser) << std::endl;
 #endif //ANTLR_DEBUG_OUTPUT
 
-	LlvmCodeGenerator llvmCodeGen("");
+	LlvmCodeGenerator llvmCodeGen(boost::filesystem::change_extension(filename, "bc").string());
 	JsParserListenerImpl jsListener(&llvmCodeGen);
 	antlr4::tree::ParseTreeWalker::DEFAULT.walk(&jsListener, tree);
 

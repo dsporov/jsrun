@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jsrun", "jsrun\jsrun.vcxproj", "{74C5F9C5-28EE-4D55-B40A-9DEAF1A159CC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jsc", "jsrun\jsrun.vcxproj", "{74C5F9C5-28EE-4D55-B40A-9DEAF1A159CC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jsrunner", "jsrunner\jsrunner.vcxproj", "{5372912C-F477-4B3F-9542-C990756A47BE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jsrt", "jsrt\jsrt.vcxproj", "{62027F5D-EAD6-4FF3-912A-4AA806C1808D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,22 @@ Global
 		{74C5F9C5-28EE-4D55-B40A-9DEAF1A159CC}.Release|x64.Build.0 = Release|x64
 		{74C5F9C5-28EE-4D55-B40A-9DEAF1A159CC}.Release|x86.ActiveCfg = Release|Win32
 		{74C5F9C5-28EE-4D55-B40A-9DEAF1A159CC}.Release|x86.Build.0 = Release|Win32
+		{5372912C-F477-4B3F-9542-C990756A47BE}.Debug|x64.ActiveCfg = Debug|x64
+		{5372912C-F477-4B3F-9542-C990756A47BE}.Debug|x64.Build.0 = Debug|x64
+		{5372912C-F477-4B3F-9542-C990756A47BE}.Debug|x86.ActiveCfg = Debug|Win32
+		{5372912C-F477-4B3F-9542-C990756A47BE}.Debug|x86.Build.0 = Debug|Win32
+		{5372912C-F477-4B3F-9542-C990756A47BE}.Release|x64.ActiveCfg = Release|x64
+		{5372912C-F477-4B3F-9542-C990756A47BE}.Release|x64.Build.0 = Release|x64
+		{5372912C-F477-4B3F-9542-C990756A47BE}.Release|x86.ActiveCfg = Release|Win32
+		{5372912C-F477-4B3F-9542-C990756A47BE}.Release|x86.Build.0 = Release|Win32
+		{62027F5D-EAD6-4FF3-912A-4AA806C1808D}.Debug|x64.ActiveCfg = Debug|x64
+		{62027F5D-EAD6-4FF3-912A-4AA806C1808D}.Debug|x64.Build.0 = Debug|x64
+		{62027F5D-EAD6-4FF3-912A-4AA806C1808D}.Debug|x86.ActiveCfg = Debug|Win32
+		{62027F5D-EAD6-4FF3-912A-4AA806C1808D}.Debug|x86.Build.0 = Debug|Win32
+		{62027F5D-EAD6-4FF3-912A-4AA806C1808D}.Release|x64.ActiveCfg = Release|x64
+		{62027F5D-EAD6-4FF3-912A-4AA806C1808D}.Release|x64.Build.0 = Release|x64
+		{62027F5D-EAD6-4FF3-912A-4AA806C1808D}.Release|x86.ActiveCfg = Release|Win32
+		{62027F5D-EAD6-4FF3-912A-4AA806C1808D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

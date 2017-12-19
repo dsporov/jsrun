@@ -19,11 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{74C5F9C5-28EE-4D55-B40A-9DEAF1A159CC}</ProjectGuid>
+    <ProjectGuid>{5372912C-F477-4B3F-9542-C990756A47BE}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>jsrun</RootNamespace>
+    <RootNamespace>jsrunner</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
-    <ProjectName>jsc</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -102,13 +101,10 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir)antlr4-runtime\$(Configuration)\include;$(ProjectDir)llvm\$(Configuration)\include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(ProjectDir)antlr4-runtime\$(Configuration)\lib;$(ProjectDir)llvm\$(Configuration)\lib;$(ProjectDir)boost\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>LLVMLinker.lib;LLVMBitWriter.lib;LLVMIRReader.lib;LLVMBitReader.lib;LLVMAsmParser.lib;LLVMipo.lib;LLVMipa.lib;LLVMInstCombine.lib;LLVMVectorize.lib;LLVMScalarOpts.lib;LLVMTransformUtils.lib;LLVMAnalysis.lib;LLVMCore.lib;LLVMSupport.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -137,47 +133,24 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir)antlr4-runtime\$(Configuration)\include;$(ProjectDir)llvm\$(Configuration)\include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(ProjectDir)antlr4-runtime\$(Configuration)\lib;$(ProjectDir)llvm\$(Configuration)\lib;$(ProjectDir)boost\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>LLVMLinker.lib;LLVMBitWriter.lib;LLVMIRReader.lib;LLVMBitReader.lib;LLVMAsmParser.lib;LLVMipo.lib;LLVMipa.lib;LLVMInstCombine.lib;LLVMVectorize.lib;LLVMScalarOpts.lib;LLVMTransformUtils.lib;LLVMAnalysis.lib;LLVMCore.lib;LLVMSupport.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="base\JavaScriptBaseLexer.cpp" />
-    <ClCompile Include="base\JavaScriptBaseParser.cpp" />
-    <ClCompile Include="generated\JavaScriptLexer.cpp" />
-    <ClCompile Include="generated\JavaScriptParser.cpp" />
-    <ClCompile Include="generated\JavaScriptParserBaseListener.cpp" />
-    <ClCompile Include="generated\JavaScriptParserListener.cpp" />
-    <ClCompile Include="jsc.cpp" />
-    <ClCompile Include="JsParserListenerImpl.cpp" />
-    <ClCompile Include="LlvmCodeGenerator.cpp" />
+    <ClCompile Include="jsrunner.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="base\JavaScriptBaseLexer.h" />
-    <ClInclude Include="base\JavaScriptBaseParser.h" />
-    <ClInclude Include="CodeGenerator.h" />
-    <ClInclude Include="generated\JavaScriptLexer.h" />
-    <ClInclude Include="generated\JavaScriptParser.h" />
-    <ClInclude Include="generated\JavaScriptParserBaseListener.h" />
-    <ClInclude Include="generated\JavaScriptParserListener.h" />
-    <ClInclude Include="jsc.h" />
-    <ClInclude Include="JsLlvmListener.h" />
-    <ClInclude Include="JsParserListenerImpl.h" />
-    <ClInclude Include="LlvmCodeGenerator.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="generated\JavaScriptLexer.tokens" />
-    <None Include="generated\JavaScriptParser.tokens" />
+    <ProjectReference Include="..\jsrt\jsrt.vcxproj">
+      <Project>{62027f5d-ead6-4ff3-912a-4aa806c1808d}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

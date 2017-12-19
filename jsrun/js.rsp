@@ -1,0 +1,11 @@
+/OUT:example-simple.dll
+/DLL
+/MACHINE:X64
+/DEFAULTLIB:msvcrt.lib
+/MANIFEST:NO
+/NOLOGO
+/LIBPATH:"C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x64"
+/LIBPATH:"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\lib\amd64"
+/LIBPATH:"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.10150.0\ucrt\x64"
+"example-simple.bc.obj"
+/EXPORT:js_main
